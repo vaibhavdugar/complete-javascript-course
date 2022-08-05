@@ -93,7 +93,7 @@ const measureKelvin = function () {
 // A) IDENTIFY
 console.log(measureKelvin());
 
-// Using a debugger
+// Using a google chrome/any other breowser debugger
 const calcTempAmplitudeBug = function (t1, t2) {
   const temps = t1.concat(t2);
   console.log(temps);
@@ -159,3 +159,12 @@ const printForecast = function (arr) {
 printForecast(data1);
 */
 
+const maxTemp = [17, 21, 23];
+const printForecast = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str += arr[i] + ' deg C' + ' in ' + i + 1 + ' days ...';
+  }
+  return '... ' + str;
+};
+console.log(printForecast(maxTemp));
